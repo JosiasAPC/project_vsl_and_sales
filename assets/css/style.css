@@ -159,6 +159,10 @@ h2.section__title {
   padding: 40px 0px;
 }
 
+.section--recommendationDoctor .row {
+  padding-bottom: 20px;
+}
+
 .recommendationDoctor__image-container {
   text-align: center;
 }
@@ -170,10 +174,103 @@ h2.section__title {
   max-width: 900px;
 }
 
+.section--recommendationDoctor svg {
+  width: 80px;
+  height: 80px;
+  fill: #003153;
+  margin-right: 10px;
+}
+
+.section--recommendationDoctor span {
+  font-size: 1.3rem;
+  color: #003153;
+  font-weight: 600;
+}
+
 /* --- Responsividade --- */
 @media (max-width: 768px) {
   .recommendationDoctor__image {
     max-width: 100%;
+  }
+
+  .section--recommendationDoctor svg {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .section--recommendationDoctor span {
+    font-size: 1.1rem;
+  }
+}
+
+/*-------------------------------------------------- DIVIDER SECTION CSS*/
+.section--divider {
+  text-align: center;
+  padding: 10px 20px;
+  max-height: 30px;
+  margin-bottom: 10px;
+  min-block-size: max-content;
+}
+
+.section--divider h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.section--divider-FDA {
+  background-color: #333333;
+}
+
+.section--divider-IGREDIENTES {
+  background-color: #003153;
+}
+
+/*-------------------------------------------------- GUARANTEES SECTION CSS*/
+
+.section--guarantees {
+  padding: 10px 0px;
+}
+
+.section--guarantees .guaranteesLogos__image {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 15px;
+}
+
+.section--guarantees .guarantees90__image {
+  width: 300px;
+  padding: 0px;
+  margin-bottom: 15px;
+}
+
+.section--guarantees .section__title--guarantees {
+  font-size: 1.7rem;
+  color: #003153;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section--guarantees .section__subtitle--guarantees {
+  font-size: 1.5rem;
+  color: #003153;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.row--center {
+  justify-self: center;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  .section--guarantees .guarantees90__image {
+    width: 180px;
   }
 }
 
