@@ -691,4 +691,16 @@ button--secundary:hover {
   margin-top: 25px;
 }
 
+@media (max-width: 768px) {
+  .section--about__us {
+    display: block;
+  }
+  .section--divider--about__us {
+    display: block;
+  }
+  .footer {
+    padding: 0px 0px 30px 0px;
+  }
+}
+
 /* -------------------------------------------------- END FOOTER CSS*/
