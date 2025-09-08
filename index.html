@@ -1,25 +1,36 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" content="width=device-width, initial-scale=1.0">
   <head>
     <title>BioNature Type 2 Diabetes Treatment Combo - BioNature Inc</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/normalize.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload" as="image" href="Logo.webp">
+    <link rel="preload" as="image" href="productPresentation_mainSection_image.webp">
     <link rel="stylesheet" href="assets/css/style.min.css" />
-    <script type="text/javascript" src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script type="text/javascript" src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js" defer></script>
     <!-- SEO Description -->
     <meta
       name="description"
       content="Descrição curta da landing page para SEO"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    
   </head>
 
 
   <body>
     <!--------------------- START MAIN LOGO -->
     <header>
-      <img src="assets/images/Logo.webp" alt="Logo" />
+      <picture>
+        <!-- Imagem para telas até 768px (mobile) -->
+        <source srcset="assets/images/mobile_images/Logo-mobile.webp" media="(max-width: 768px)">
+        
+        <!-- Imagem para telas maiores (desktop/web) -->
+        <source srcset="assets/images/Logo.webp" media="(min-width: 769px)">
+        
+        <!-- Fallback caso o navegador não suporte <picture> -->
+        <img importance="high" src="assets/images/Logo.webp" alt="Logo" loading="eager">
+      </picture>
     </header>
     <!--------------------- END MAIN LOGO -->
     <main>
@@ -42,11 +53,21 @@
             <!-- Image column -->
             <div class="col col--50 media">
               <div class="product__image-container">
-                <img
-                  src="assets/images/productPresentation_mainSection_image.webp"
-                  alt="Berberine + Chromium Picolinate"
-                  class="product__image"
-                />
+                <picture>
+                  <!-- Imagem para telas até 768px (mobile) -->
+                  <source srcset="assets/images/mobile_images/productPresentation_mainSection_image-mobile.webp" media="(max-width: 768px)">
+                  
+                  <!-- Imagem para telas maiores (desktop/web) -->
+                  <source srcset="assets/images/productPresentation_mainSection_image.webp" media="(min-width: 769px)">
+                  
+                  <!-- Fallback caso o navegador não suporte <picture> -->
+                  <img 
+                    importance="high" 
+                    src="assets/images/productPresentation_mainSection_image.webp" 
+                    alt="Berberine + Chromium Picolinate" 
+                    loading="eager" 
+                    class="product__image">
+                </picture>
                 <a href="#productcards" class="button button--primary">Order Now!</a>
               </div>
             </div>
@@ -61,12 +82,19 @@
       >
         <div class="col col--50 media">
           <div class="recommendationDoctor__image-container">
-            <img
-              loading="lazy"
-              src="assets/images/recommendationDoctor_image.webp"
-              alt="Doctor Recommendation"
-              class="recommendationDoctor__image"
-            />
+            <picture>
+              <!-- Imagem para telas até 768px (mobile) -->
+              <source srcset="assets/images/mobile_images/recommendationDoctor_image-mobile.webp" media="(max-width: 768px)">
+              
+              <!-- Imagem para telas maiores (desktop/web) -->
+              <source srcset="assets/images/recommendationDoctor_image.webp" media="(min-width: 769px)">
+              
+              <!-- Fallback caso o navegador não suporte <picture> -->
+              <img importance="high" 
+              src="assets/images/recommendationDoctor_image.webp" 
+              alt="Doctor Recommendation" 
+              class="recommendationDoctor__image" loading="lazy">
+            </picture>
           </div>
         </div>
 
@@ -126,12 +154,20 @@
         <div class="container">
           <div class="row row--center">
             <div class="col content">
-              <img
-                loading="lazy"
-                src="assets/images/certifications_guarantee.webp"
-                alt="Product features"
-                class="guaranteesLogos__image"
-              />
+              <picture>
+                <!-- Imagem para telas até 768px (mobile) -->
+                <source srcset="assets/images/mobile_images/certifications_guarantee-mobile.webp" media="(max-width: 768px)">
+                
+                <!-- Imagem para telas maiores (desktop/web) -->
+                <source srcset="assets/images/certifications_guarantee.webp" media="(min-width: 769px)">
+                
+                <!-- Fallback caso o navegador não suporte <picture> -->
+                <img importance="high" 
+                src="assets/images/certifications_guarantee.webp" 
+                alt="Product features" 
+                class="guaranteesLogos__image" 
+                loading="lazy">
+              </picture>
             </div>
           </div>
 
@@ -145,12 +181,20 @@
 
           <div class="row row--center">
             <div class="col content">
-              <img
-                loading="lazy"
-                src="assets/images/90-days-money-back.webp"
-                alt="100% Guarantee 90 days money back"
-                class="guarantees90__image"
-              />
+              <picture>
+                <!-- Imagem para telas até 768px (mobile) -->
+                <source srcset="assets/images/mobile_images/90-days-money-back-mobile.webp" media="(max-width: 768px)">
+                
+                <!-- Imagem para telas maiores (desktop/web) -->
+                <source srcset="assets/images/90-days-money-back.webp" media="(min-width: 769px)">
+                
+                <!-- Fallback caso o navegador não suporte <picture> -->
+                <img importance="high" 
+                src="assets/images/90-days-money-back.webp" 
+                alt="100% Guarantee 90 days money back" 
+                class="guarantees90__image" 
+                loading="lazy">
+              </picture>
             </div>
           </div>
 
@@ -174,23 +218,39 @@
         <div class="container">
           <div class="row row--center row--full">
             <div class="col content col--igredients">
-              <img
-                loading="lazy"
-                src="assets/images/igredients_image_01.webp"
-                alt="Igredientes Berberine"
-                class="igredients__image"
-              />
+              <picture>
+                <!-- Imagem para telas até 768px (mobile) -->
+                <source srcset="assets/images/mobile_images/igredients_image_01-mobile.webp" media="(max-width: 768px)">
+                
+                <!-- Imagem para telas maiores (desktop/web) -->
+                <source srcset="assets/images/igredients_image_01.webp" media="(min-width: 769px)">
+                
+                <!-- Fallback caso o navegador não suporte <picture> -->
+                <img importance="high" 
+                src="assets/images/igredients_image_01.webp" 
+                alt="Igredientes Berberine" 
+                class="igredients__image" 
+                loading="lazy">
+              </picture>
             </div>
           </div>
 
           <div class="row row--center row--full">
             <div class="col content col--igredients">
-              <img
-                loading="lazy"
-                src="assets/images/igredients_image_02.webp"
-                alt="Natural Berberine Ingredients"
-                class="igredients__image"
-              />
+              <picture>
+                <!-- Imagem para telas até 768px (mobile) -->
+                <source srcset="assets/images/mobile_images/igredients_image_02-mobile.webp" media="(max-width: 768px)">
+                
+                <!-- Imagem para telas maiores (desktop/web) -->
+                <source srcset="assets/images/igredients_image_02.webp" media="(min-width: 769px)">
+                
+                <!-- Fallback caso o navegador não suporte <picture> -->
+                <img importance="high" 
+                src="assets/images/igredients_image_02.webp" 
+                alt="Natural Berberine Ingredients" 
+                class="igredients__image" 
+                loading="lazy">
+              </picture>
             </div>
           </div>
 
@@ -224,12 +284,21 @@
 
           <div class="row row--center row--full">
             <div class="col content col--igredients">
-              <img
-                loading="lazy"
-                src="assets/images/igredients_image_03.webp"
-                alt="Igredientes Berberine"
-                class="igredients__image"
-              />
+              <picture>
+                <!-- Imagem para telas até 768px (mobile) -->
+                <source srcset="assets/images/mobile_images/igredients_image_03-mobile.webp" media="(max-width: 768px)">
+                
+                <!-- Imagem para telas maiores (desktop/web) -->
+                <source srcset="assets/images/igredients_image_03.webp" media="(min-width: 769px)">
+                
+                <!-- Fallback caso o navegador não suporte <picture> -->
+                <img importance="high" 
+                src="assets/images/igredients_image_03.webp" 
+                alt="Igredientes Berberine" 
+                class="igredients__image" 
+                loading="lazy">
+              </picture>
+
             </div>
           </div>
 
@@ -259,12 +328,20 @@
 
           <div class="row row--center row--full">
             <div class="col content col--igredients">
-              <img
-                loading="lazy"
-                src="assets/images/igredients_image_04.webp"
-                alt="Igredientes Berberine Combo"
-                class="igredients__image"
-              />
+              <picture>
+                <!-- Imagem para telas até 768px (mobile) -->
+                <source srcset="assets/images/mobile_images/igredients_image_04-mobile.webp" media="(max-width: 768px)">
+                
+                <!-- Imagem para telas maiores (desktop/web) -->
+                <source srcset="assets/images/igredients_image_04.webp" media="(min-width: 769px)">
+                
+                <!-- Fallback caso o navegador não suporte <picture> -->
+                <img importance="high" 
+                src="assets/images/igredients_image_04.webp" 
+                alt="Igredientes Berberine Combo" 
+                class="igredients__image" 
+                loading="lazy">
+              </picture>
             </div>
           </div>
 
@@ -308,12 +385,21 @@
 
           <div class="row row--center row--full">
             <div class="col content col--makes-diference">
-              <img
-                loading="lazy"
-                src="assets/images/make_diference_image.webp"
-                alt="Capsules"
-                class="makes-diference__image"
-              />
+              <picture>
+                <!-- Imagem para telas até 768px (mobile) -->
+                <source srcset="assets/images/mobile_images/make_diference_image-mobile.webp" media="(max-width: 768px)">
+                
+                <!-- Imagem para telas maiores (desktop/web) -->
+                <source srcset="assets/images/make_diference_image.webp" media="(min-width: 769px)">
+                
+                <!-- Fallback caso o navegador não suporte <picture> -->
+                <img importance="high" 
+                src="assets/images/make_diference_image.webp" 
+                alt="Capsules" 
+                class="makes-diference__image" 
+                loading="lazy">
+              </picture>
+
             </div>
           </div>
 
@@ -377,13 +463,13 @@
       </div>
       <!--------------------- END DIVIDER MAKES DIFERENCE -->
       <!--------------------- START OFFERT ALERT -->
-      <section class="section section--ofert" id="section--ofert">
-        <div class="container ofert-container" id="ofert">
-          <div class="max-w-sm w-full text-center space-y-6 border border-red-100 rounded-xl p-5 shadow-md shadow-inner bg-white">
+      <section class="alert-section" id="section--ofert">
+        <div class="alert-container">
+          <div class="alert-box">
             <!-- Alert icon -->
-            <div class="flex justify-center">
+            <div class="alert-icon">
               <svg
-                class="w-12 h-12 text-red-500"
+                class="icon"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -399,16 +485,16 @@
             </div>
 
             <!-- Text -->
-            <p class="text-lg font-medium text-gray-800">
+            <p class="alert-text">
               Attention! Due to import clearance delays, our restocking for the US
               market has been postponed.
             </p>
 
             <!-- Stock counter with pulse animation -->
-            <p id="stock" class="text-4xl text-red-500 animate-pulse-custom"></p>
+            <p id="stock" class="alert-stock"></p>
 
             <!-- Next batch date -->
-            <p id="nextBatch" class="text-md font-semibold text-gray-700"></p>
+            <p id="nextBatch" class="alert-next"></p>
           </div>
         </div>
       </section>
@@ -640,6 +726,6 @@
       <p>&copy; Copyright © 2025 | All rights reserved.</p>
     </footer>
     <!-------------------------- END FOOTER -->
-    <script defer src="assets/js/main.js"></script>
+    <script async src="assets/js/main.js"></script>
   </body>
 </html>

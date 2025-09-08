@@ -1,3 +1,192 @@
+/* -----------------NORMALIZE CSS */
+
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+  ========================================================================== */
+
+html {
+  line-height: 1.15; /* 1 */
+}
+
+/* Sections
+  ========================================================================== */
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Text-level semantics
+  ========================================================================== */
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+  ========================================================================== */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+  ========================================================================== */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+  ========================================================================== */
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+  ========================================================================== */
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
 /*-------------------------------------------------- BODY CSS*/
 
 html {
@@ -688,6 +877,83 @@ header img {
 }
 
 /* -------------------------------------------------- END ABOUT US CSS*/
+
+/*-------------------------------------------------- START ALERT CSS*/
+/* Container da seção */
+.alert-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Caixa do alert */
+.alert-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.alert-box {
+  background-color: #ffffff;
+  border: 1px solid #fca5a5; /* vermelho claro */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Ícone */
+.alert-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  color: #ef4444; /* vermelho */
+}
+
+/* Texto principal */
+.alert-text {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 500;
+  color: #1f2937; /* cinza escuro */
+  margin: 0px;
+}
+
+/* Stock contador */
+.alert-stock {
+  font-size: 2.25rem; /* 36px */
+  color: #ef4444;
+  font-weight: 700;
+  margin: 0px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Próxima remessa */
+.alert-next {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151; /* cinza médio */
+  margin: 0px;
+}
+
+/* Animação pulse */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+}
+/*-------------------------------------------------- END ALERT CSS*/
 
 /*-------------------------------------------------- START FOOTER CSS*/
 
