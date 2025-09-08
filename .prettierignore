@@ -1,0 +1,3 @@
+# Ignorar todos os arquivos minificados
+*.min.js
+*.min.css
