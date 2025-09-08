@@ -3,26 +3,26 @@
     <title>My Web Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/vendor/normalize.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Descrição SEO -->
+    <!-- SEO Description -->
     <meta
       name="description"
       content="Descrição curta da landing page para SEO"
     />
-    <!-- Projeto no wordpress está sem favicon -->
+    <!-- WordPress project is missing a favicon -->
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon-16x16.png"
+      sizes="16x16"
+    /> -->
   </head>
 
   <body>
     <header>
-      <!-- <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav> -->
       <img src="assets/images/Logo-300x81.png" alt="Logo" />
     </header>
 
@@ -33,7 +33,7 @@
       >
         <div class="container">
           <div class="row">
-            <!-- Coluna de texto -->
+            <!-- Text column -->
             <div class="col col--50 content">
               <h2 class="section__title">
                 Definitive Treatment for Type 2 Diabetes
@@ -42,7 +42,7 @@
               <h4 class="section__subtitle">Berberine + Chromium Picolinate</h4>
             </div>
 
-            <!-- Coluna da imagem -->
+            <!-- Image column -->
             <div class="col col--50 media">
               <div class="product__image-container">
                 <img
@@ -50,7 +50,7 @@
                   alt="Berberine + Chromium Picolinate"
                   class="product__image"
                 />
-                <a href="#" class="button button--primary">Order Now!</a>
+                <a href="#productcards" class="button button--primary">Order Now!</a>
               </div>
             </div>
           </div>
@@ -68,13 +68,11 @@
               alt="Berberine + Chromium Picolinate"
               class="recommendationDoctor__image"
             />
-            <!-- <a href="#" class="button button--primary">Order Now!</a> -->
           </div>
         </div>
 
         <div class="container">
           <div class="row">
-            <!-- Coluna de texto -->
             <div class="row">
               <div class="col col--50 content">
                 <svg
@@ -117,14 +115,11 @@
         </div>
       </section>
 
-      <section
-        id="divider"
-        class="section section--divider section--divider-FDA"
-      >
+      <div id="divider" class="section section--divider section--divider-FDA">
         <div class="container">
           <h2>FDA Approved</h2>
         </div>
-      </section>
+      </div>
 
       <section id="guarantees" class="section section--guarantees">
         <div class="container">
@@ -166,18 +161,460 @@
         </div>
       </section>
 
-      <section
-        id="divider"
-        class="section section--divider section--divider-IGREDIENTES"
-      >
+      <div class="section section--divider section--divider-IGREDIENTES">
+        <h2>Igredientes</h2>
+      </div>
+
+      <section id="divider" class="section section--igredients">
         <div class="container">
-          <h2>Igredientes</h2>
+          <div class="row row--center row--full">
+            <div class="col content col--igredients">
+              <img
+                src="assets/images/igredients_image_01.png"
+                alt="Igredientes Berberine"
+                class="igredients__image"
+              />
+            </div>
+          </div>
+
+          <div class="row row--center row--full">
+            <div class="col content col--igredients">
+              <img
+                src="assets/images/igredients_image_02.png"
+                alt="Igredientes Berberine"
+                class="igredients__image"
+              />
+            </div>
+          </div>
+
+          <div class="row igredients_texts">
+            <div class="col content">
+              <h2 class="section__title section__title--igredients">
+                Coptis chinensis Berberine
+              </h2>
+              <p class="section__subtitle section__subtitle--igredients">
+                Coptis chinensis (Chinese Gold) provides the most potent and
+                pure form of berberine, scientifically proven to activate AMPK
+                proteins in the body up to 87% efficiency.
+              </p>
+              <p>
+                Unlike inferior forms like Berberis vulgaris, which deliver only
+                12% activation, Coptis chinensis berberine works effectively to
+                combat insulin resistance at the root cause of Type 2 Diabetes.
+              </p>
+              <p>
+                <span class="paragraph--spam"
+                  >It reduces blood sugar levels, increases insulin
+                  sensitivity,</span
+                >
+                and boosts metabolic health naturally, without harsh side
+                effects. When encapsulated with our exclusive nanoparticle
+                technology, absorption reaches maximum levels, providing results
+                even within the first 7 days.
+              </p>
+            </div>
+          </div>
+
+          <div class="row row--center row--full">
+            <div class="col content col--igredients">
+              <img
+                src="assets/images/igredients_image_03.png"
+                alt="Igredientes Berberine"
+                class="igredients__image"
+              />
+            </div>
+          </div>
+
+          <div class="row igredients_texts">
+            <div class="col content col--100">
+              <h2 class="section__title section__title--igredients2">
+                Coptis chinensis Berberine
+              </h2>
+              <p>
+                <span class="paragraph--spam">Chromium Picolinate</span>
+                is the only scientifically proven form of chromium to enhance
+                the quality of insulin, allowing it to pull glucose from the
+                bloodstream into the cells effectively.
+              </p>
+              <p class="section__subtitle section__subtitle--igredients">
+                It works synergistically with berberine to further regulate
+                blood sugar levels and restore insulin sensitivity even in
+                advanced Type 2 Diabetes cases.
+              </p>
+              <p>
+                Encapsulated with nanoparticle technology, it ensures superior
+                bioavailability and protection against digestive degradation.
+              </p>
+            </div>
+            <a href="#productcards" class="button button--primary">Order Now!</a>
+          </div>
+
+          <div class="row row--center row--full">
+            <div class="col content col--igredients">
+              <img
+                src="assets/images/igredients_image_04.png"
+                alt="Igredientes Berberine"
+                class="igredients__image"
+              />
+            </div>
+          </div>
+
+          <div class="row igredients_texts">
+            <div class="col content col--100">
+              <h2 class="section__title section__title--igredients2">
+                Together, they are unbeatable!
+              </h2>
+              <p class="section__subtitle section__subtitle--igredients">
+                The combination of Coptis chinensis Berberine and Chromium
+                Picolinate offers a complete, natural, and safe solution to Type
+                2 Diabetes.
+              </p>
+              <p>
+                Berberine activates the AMPK pathway to reduce blood sugar and
+                insulin resistance, while Chromium Picolinate enhances insulin
+                action to transport glucose into the cells.
+              </p>
+              <p class="section__subtitle section__subtitle--igredients">
+                Users typically see energy return, reduced fatigue, and
+                stabilized glucose levels within days, and significant
+                improvement within weeks.
+              </p>
+              <p>
+                This combination provides maximum results with minimal side
+                effects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="divider" class="section section--makes-diference">
+                  <div
+            class="section section--divider section--divider-makes-diference"
+          >
+            <h2>Why Nanoparticle Capsules Make All the Difference</h2>
+          </div>
+        <div class="container">
+
+          <div class="row row--center row--full">
+            <div class="col content col--makes-diference">
+              <img
+                src="assets/images/make_diference_image.jpg"
+                alt="Capsules"
+                class="makes-diference__image"
+              />
+            </div>
+          </div>
+
+          <div class="row igredients_texts">
+            <div class="col content col--100">
+              <p>
+                At BioNature Inc., we go far beyond traditional supplement
+                manufacturing. <br />
+                Our exclusive
+                <span class="paragraph--spam"
+                  >Nanoparticle Capsule Technology</span
+                >
+                revolutionizes the absorption and effectiveness of natural
+                compounds like
+                <span class="paragraph--spam">Coptis chinensis Berberine</span>
+                and
+                <span class="paragraph--spam">Chromium Picolinate.</span>
+                <br />
+                Unlike standard gelatin capsules, which are easily broken down
+                by stomach acids and digestive enzymes (destroying up to 60% of
+                the active ingredients), our
+                <span class="paragraph--spam">nanoparticle capsules</span>
+                protect the ingredients all the way to the bloodstream. <br />
+                <span class="paragraph--spam">How it works:</span> <br />
+                The active ingredients are encapsulated in microscopic,
+                lipid-based particles. <br />
+                These particles bypass most of the gastrointestinal breakdown.
+                <br />
+                They release the compounds gradually, at the precise moment your
+                body can absorb them fully. <br />
+                <span class="paragraph--spam">The result?</span>
+                <span class="paragraph--spam">Up to 95% bioavailability</span>
+                compared to just 30-40% with conventional capsules. <br />
+                <span class="paragraph--spam"
+                  >Faster, more powerful results:</span
+                >
+                Many users report noticeable improvements within just
+                <span class="paragraph--spam"
+                  >7 days. Smaller dosages, maximum effect:</span
+                >
+                You get full potency without needing to double your intake. When
+                you choose
+                <span class="paragraph--spam"
+                  >BioNature Type 2 Diabetes Treatment Combo,</span
+                > the most advanced delivery system in the world</span
+                > for natural blood sugar support. <br />
+                This is why no other berberine or chromium supplement compares to the effectiveness of
+                <span class="paragraph--spam"
+                  >BioNature Type 2 Diabetes Treatment Combo.</span
+                >
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <div
+            class="section section--divider section--divider-makes-diference"
+          >
+            <h2>Choose Your Treatment</h2>
+          </div>
+
+      <section class="section section--ofert" id="section--ofert">
+        <div class="container ofert-container" id="ofert">
+          <div class="max-w-sm w-full text-center space-y-6 border border-red-100 rounded-xl p-5 shadow-md shadow-inner bg-white">
+            <!-- Alert icon -->
+            <div class="flex justify-center">
+              <svg
+                class="w-12 h-12 text-red-500"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.054 0 1.658-1.14 1.105-2.01L13.105 4.99c-.553-.87-1.658-.87-2.211 0L3.977 17.99c-.553.87.051 2.01 1.105 2.01z"
+                ></path>
+              </svg>
+            </div>
+
+            <!-- Text -->
+            <p class="text-lg font-medium text-gray-800">
+              Attention! Due to import clearance delays, our restocking for the US
+              market has been postponed.
+            </p>
+
+            <!-- Stock counter with pulse animation -->
+            <p id="stock" class="text-4xl text-red-500 animate-pulse-custom"></p>
+
+            <!-- Next batch date -->
+            <p id="nextBatch" class="text-md font-semibold text-gray-700"></p>
+          </div>
+        </div>
+      </section>
+      <!-------------------------- START SECTION PRODUCT CARDS -->
+      <section class="section product-cards" id="productcards">
+        <div class="container">
+
+          <div class="row row--center">
+            
+            <!----------------START PRODUCT 01 -->
+            <div class="col col--33 product-card">
+              <img
+                src="assets/images/product_card_image_01.png"
+                alt="Product 1"
+                class="product-card__image"
+              />
+              <div class="product-card__content">
+                <h2 class="product-card__title">Premium Combo</h2>
+                <h3 class="product-card__description">Berberine + Chromium Picolinate</h3>
+                <span class="product-card__span">360 Days of Treatment</span>
+                <div class="product-card--diveder"></div>
+                <div class="product-card__price-container">
+                  <div class="row">
+                    <div class="col--100">
+                      <p class="product-card__price">$39</p>
+                    </div>
+                    <div class="col--100">
+                      <span class="product-card__per__month">per month of treatment</span>
+                    </div>
+                    <div class="col--100">
+                      <span class="product-card__txt">Total: $468</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card--diveder"></div>
+                <a href="https://pay.bionatureinc.com/checkout/184070764:1" class="button button--secundary">Buy Now!</a>
+                <div class="product-card__price-container">
+                  <div class="row">
+                    <div class="col--100">
+                      <p class="product-card__txt">*Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!----------------END PRODUCT 01 -->
+            <!----------------START PRODUCT 02 -->
+            <div class="col col--33 product-card">
+              <img
+                src="assets/images/product_card_image_02.png"
+                alt="Product 2"
+                class="product-card__image"
+              />
+               <div class="product-card__content">
+                <h2 class="product-card__title">Premium Combo</h2>
+                <h3 class="product-card__description">Berberine + Chromium Picolinate</h3>
+                <span class="product-card__span">180 Days of Treatment</span>
+                <div class="product-card--diveder"></div>
+                <div class="product-card__price-container">
+                  <div class="row">
+                    <div class="col--100">
+                      <p class="product-card__price">$49</p>
+                    </div>
+                    <div class="col--100">
+                      <span class="product-card__per__month">per month of treatment</span>
+                    </div>
+                    <div class="col--100">
+                      <span class="product-card__txt">Total: $294</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card--diveder"></div>
+                <a href="https://pay.bionatureinc.com/checkout/184072557:1" class="button button--secundary">Buy Now!</a>
+                <div class="product-card__price-container">
+                  <div class="row">
+                    <div class="col--100">
+                      <p class="product-card__txt">*Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!----------------END PRODUCT 02 -->
+            <!----------------START PRODUCT 03 -->
+            <div class="col col--33 product-card">
+              <img
+                src="assets/images/product_card_image_03.png"
+                alt="Product 3"
+                class="product-card__image"
+              />
+               <div class="product-card__content">
+                <h2 class="product-card__title">Premium Combo</h2>
+                <h3 class="product-card__description">Berberine + Chromium Picolinate</h3>
+                <span class="product-card__span">90 Days of Treatment</span>
+                <div class="product-card--diveder"></div>
+                <div class="product-card__price-container">
+                  <div class="row">
+                    <div class="col--100">
+                      <p class="product-card__price">$79</p>
+                    </div>
+                    <div class="col--100">
+                      <span class="product-card__per__month">per month of treatment</span>
+                    </div>
+                    <div class="col--100">
+                      <span class="product-card__txt">Total: $237</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card--diveder"></div>
+                <a href="https://pay.bionatureinc.com/checkout/184072558:1" class="button button--secundary">Buy Now!</a>
+                <div class="product-card__price-container">
+                  <div class="row">
+                    <div class="col--100">
+                      <p class="product-card__txt">*Free Shipping</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!----------------END PRODUCT 03 -->
+          </div>
+        </div>
+
+      </section>
+      <!-------------------------- END SECTION PRODUCT CARDS -->
+
+
+      <div class="section section--divider section--divider-IGREDIENTES section--divider--about__us">
+        <h2>About us</h2>
+      </div>
+
+      <section id="divider" class="section section--about__us">
+        <div class="container">
+
+          <div class="row row--center row--full">
+            <div class="col content col--about__us">
+              <img
+                src="assets/images/about_us_img_01.jpg"
+                alt="about__us"
+                class="about__us__image"
+              />
+            </div>
+          </div>
+
+          <div class="row about__us_texts">
+            <div class="col content">
+              <h2 class="section__title section__title--about__us">
+                Bionorica SE - BioNature Inc.
+              </h2>
+              <p class="section__subtitle section__subtitle--about__us align--left">
+                History
+              </p>
+              <p class="align--left">
+                Josef Popp, the grandfather of the current owner and CEO Professor Dr. Michael A. Popp, founded Bionorica on May 13, 1933, registering the “distribution of chemical-pharmaceutical preparations” at the Nuremberg Trade Supervisory Office. 
+                <br/> He sold the first natural remedies and almost 400 different types of tea. The founder remained the head of the company for twelve years until 1945 when his daughter, Erna Popp, who studied pharmacy, took over the management of the company. <br/>
+                Together with her brother Dr. Hans-Oskar Popp, a doctor specializing in naturopathy, she laid the foundation stone for today’s company. By 1961, Bionorica already had a filling machine, a labelling machine and its first employees.
+              </p>
+            </div>
+          </div>
+
+          <div class="row row--center row--full">
+            <div class="col content col--about__us">
+              <img
+                src="assets/images/about_us_img_02.jpg"
+                alt="about__us"
+                class="about__us__image"
+              />
+            </div>
+          </div>
+
+          <div class="row about__us_texts">
+            <div class="col content col--100">
+              <p class="section__title section__title--about__us2 align--left">
+                Mission
+              </p>
+              <p class="align--left">
+                We believe that nature holds the power to promote well-being, and our vision is to become the leading global reference in natural health.
+                <br/> 
+                Our mission is to deliver the highest quality products, continuously innovating to bring the benefits of plants to people worldwide, enabling them to live healthier and more vibrant lives.
+              </p>
+            </div>
+          </div>
+
+          <div class="row row--center row--full no-gap">
+            <div class="row about__us_texts no-gap">
+              <div class="col content col--100">
+                <p class="section__title section__title--about__us2 align--left">
+                  U.S Branch
+                </p>
+              </div>
+            </div>
+            <div class="col content col--about__us">
+              <img
+                src="assets/images/about_us_img_03.avif"
+                alt="about__us"
+                class="about__us__image"
+              />
+              <p class="description__image align--left">BioNature Headquarters, USA</p>
+            </div>
+          </div>
+
+          <div class="row row--center row--full">
+            <div class="col content col--about__us">
+              <img
+                src="assets/images/about_us_img_04.webp"
+                alt="about__us"
+                class="about__us__image"
+              />
+              <p class="description__image align--left">Distribution Center BioNature, USA</p>
+            </div>
+          </div>
+          <a href="#productcards" class="button button--primary">Order Now!</a>
         </div>
       </section>
     </main>
 
-    <footer>
-      <!-- <p>&copy; 2024 My Web Page</p> -->
+    <footer class="footer">
+      <p>&copy; Copyright © 2025 | All rights reserved.</p>
     </footer>
 
     <script src="assets/js/main.js"></script>
